@@ -21,7 +21,8 @@ b5: Thêm file
 b6: Commit
 	git commit -m "message"
 b7: Đẩy code lên github
-	git push -u origin master
+	git remote add origin https://github.com/trungh2506/movie-website.git
+	git push -u origin master (nếu lỗi thì git push)
 b8: Đẩy code trên github về máy (nếu là sửa code)
 	git pull
 	
