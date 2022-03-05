@@ -1,0 +1,18 @@
+Chủ đề: web chiếu phim như trang Starlight
+Danh sách thành viên:
+1. Nguyễn Quốc Cường
+2. Nguyễn Văn An
+3. Hàn Quốc Trung
+4. Nguyễn Nhật Quang
+5. Vy Thành Long
+
+
+1/ Vẽ form website(trang chủ, các trang phụ)
+2/ Dự kiến? bao nhiêu trang, những trang gì?
+	-Trang chủ(*)
+	-Lịch chiếu
+	-Phim(Đang chiếu, lịch chiếu)
+	-Thông tin phim
+		+Lịch chiếu
+		+Đặt vé
+3/ CSDL
