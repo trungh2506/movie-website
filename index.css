@@ -11,6 +11,11 @@ html{
     background-size: cover;
     background-position: center;
 }
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
 /* Header top social */
 .header-top-area {
     background: #22272b none repeat scroll 0 0;
@@ -83,7 +88,7 @@ html{
     transition: all 0.2s;
 }
 .menu-bar ul li a{
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
     transition: all 0.6s;
     border-radius: 10px;
@@ -114,7 +119,7 @@ html{
 }
 .dropdown-menu ul li{
     width: 150px;
-    padding: 10px;
+    padding: 5px;
 }
 .dropdown-menu ul li a{
     font-size: 20px;
@@ -135,10 +140,7 @@ footer{
     text-align: center;
     border-top: 1px solid rgb(131, 75, 1);;
 }
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
