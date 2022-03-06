@@ -112,6 +112,7 @@ html{
 }
 .dropdown-menu{
     display: none;
+    transition: all 0.3s;
 }
 .dropdown-menu ul{
     display: block;
