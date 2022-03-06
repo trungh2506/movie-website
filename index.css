@@ -4,6 +4,7 @@
     font-family: 'Fredoka', sans-serif;
     
 }
+/* Header top social */
 .header-top-area {
     background: #22272b none repeat scroll 0 0;
     align-items: center;
@@ -22,81 +23,142 @@
     color: #fff;
     font-size: 20px;
 }
-.header-top-menu ul {
-    text-align: right;  
+.header-top-social li a img {
+    transition: all 0.6s;
 }
-.header-top-menu ul li {
-    display: inline-block;
-    margin-right: 10px;
-    padding:5px;
+.header-top-social li a img:hover {
+    transform: scale(1.5);
 }
-.header-top-menu ul li:last-child {
-    margin-right: 0px;
-}
-.header-top-menu ul li a {
-    color: #fff;
-    text-transform: capitalize;
-    display: block;
-}
-.main-header-area {
-    background: #fff none repeat scroll 0 0;
-    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.54);
-}
-.site-logo {
-    margin-top: 0;
-    position: relative;
-    z-index: 9999;
 
+
+/* Navigation bar */
+.menu-bar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
 }
-.mainmenu a{
-    font-size: 40px;
+.menu-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+.menu-bar ul li{
+    padding: 25px 10px;
+    position: relative;
+    transition: all 0.2s;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    font-size: 25px;
     font-style: italic;
+    color: #000000;
+    transition: all 0.6s;
+    border-radius: 10px;
+    padding: 22px 10px;
 }
-.mainmenu ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-    padding: 0;
+.menu-bar ul li a:hover{
+    color: rgb(255, 255, 255);
 }
-.col-lg-3 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+.menu-bar ul li:hover{
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
 }
-.row{
-    display: flex;
+.menu-bar ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
-.col-lg-9{
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 75%;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
-    padding-bottom: 0px;
+.dropdown-menu{
+    display: none;
 }
-.single-footer-widget ul{
-    list-style-type: none;
+.dropdown-menu ul{
+    display: block;
+    margin: 10px;
 }
-.copyright-area {
-    padding: 15px 0;
-    text-align: center;
-    border-top: 1px solid rgb(38, 191, 251);
+.dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
 }
-nav{
-    background-color:#ffffff;
+.dropdown-menu ul li a{
+    font-size: 20px;
+    padding: 10px;
 }
-nav a{
-    display:inline-block;
-    padding:10px;
-    font-size:20px;
-    color:rgb(0, 0, 0);
-    text-decoration:none;
+.logo{
+    transition: all 0.6s
 }
-nav a:hover{
-    background-color:rgb(38, 191, 251);
+.logo:hover{
+    transform: scale(1.2);
 }
+/* Footer */
 footer{
     margin-top: 100%;
+}
+.copyright-area {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid rgb(131, 75, 1);;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col ul{
+    padding-bottom: 10px;
+}
+.footer-col ul li{
+    list-style-type: none;
+}
+.footer-col h4{
+    padding-top: 10px;
+	font-size: 20px;
+    font-weight: bold;
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgb(255, 0, 0);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+    font-weight: bold;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000000;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
 }
