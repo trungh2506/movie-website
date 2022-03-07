@@ -12,12 +12,13 @@ html{
     background-position: center;
 }
 .container{
-	max-width: 1170px;
+	max-width: 1280px;
 	margin:auto;
 }
 
 /* Header top social */
 .header-top-area {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background: #22272b none repeat scroll 0 0;
     align-items: center;
     padding: 10px 0;
@@ -108,13 +109,18 @@ html{
     left: 0;
     top: 100%;
     background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .dropdown-menu{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
     display: none;
     transition: all 0.3s;
+
 }
 .dropdown-menu ul{
+    
     display: block;
     margin: 10px;
 }
@@ -134,12 +140,13 @@ html{
 }
 /* Footer */
 footer{
-    margin-top: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .copyright-area {
     padding: 10px;
     text-align: center;
-    border-top: 1px solid rgb(131, 75, 1);;
+    border-top: 1px solid rgb(131, 75, 1);
+    
 }
 
 .row{
@@ -193,3 +200,4 @@ footer{
 	color: #ffffff;
 	padding-left: 8px;
 }
+
