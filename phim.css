@@ -1,0 +1,23 @@
+ul{
+  list-style: none;
+  margin-right: 50px;
+}
+.entry{
+  margin: 30px auto;
+  display: flex;
+ 
+}
+.entry img{
+  text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    max-width: 450px;
+    max-height: 550px;
+}
+.entry .entry-title,p{
+  text-align: center;
+}
+
+.entry .entry-item li:nth-child(4n) {
+  margin-right: 0;
+}
