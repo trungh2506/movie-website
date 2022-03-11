@@ -1,8 +1,47 @@
 /* Slide image */
-.slide-image img{
-    max-width: 1280px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: block;
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    display: flex;
+    width: 1280px;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width:  1280px;
+    height: 530px;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
 }
 
 /* Booking-form */
@@ -34,6 +73,14 @@ section{
     text-align: left;
     line-height: 22px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+input[type="date"]{
+    height: 60px;
+    right: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
 }
 .row-movie-tabs{
     margin-bottom: 200px;
