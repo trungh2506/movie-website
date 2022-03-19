@@ -4,6 +4,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
     list-style-type: none;
+    font-style: italic;
 }
 html{
     background-image: url('background/background3.jpg'); 
