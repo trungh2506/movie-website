@@ -110,6 +110,7 @@ html{
     top: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    z-index: 999;
 }
 .dropdown-menu{
     border-bottom: 1px solid rgb(0, 0, 0);
