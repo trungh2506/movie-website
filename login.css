@@ -84,6 +84,7 @@ input[id="confirm-login"]{
     color: white;
     width: 250px;
     margin-left: 125px;
+    cursor: pointer;
 }
 .forgot-password ul{
     text-align: left;
