@@ -1,8 +1,4 @@
 .movie-list-area{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    align-items: center;
 background-color:#e6e7e9;
 border-color: #4a4d58;
 border-style: solid none none;
@@ -22,6 +18,9 @@ text-align: left;
     align-items: center;
 color:#4a4d58;
 padding: 0px 15px;
+margin-left: 30px;
+
+
 
 }
 
