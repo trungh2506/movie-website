@@ -7,7 +7,7 @@
     display: flex;
     width: 1280px;
     left: 0;
-    animation: 20s slider infinite;
+    animation: 40s slider infinite;
 }
 #slider figure img{
     float: left;
@@ -18,30 +18,53 @@
     0%{
         left: 0;
     }
-    20%{
+    6%{
         left: 0;
     }
-    25%{
+    12%{
         left: -100%;
     }
-    45%{
+    18%{
         left: -100%;
     }
-    50%{
+    24%{
         left: -200%;
     }
-    70%{
+    30%{
         left: -200%;
     }
-    75%{
+    36%{
         left: -300%;
     }
-    95%{
+    42%{
         left: -300%;
+    }
+    48%{
+        left: -300%;
+    }
+    54%{
+        left: -300%;
+    }
+    60%{
+        left: -200%;
+    }
+    66%{
+        left: -200%;
+    }
+    72%{
+        left: -100%;
+    }
+    78%{
+        left: -100%;
+    }
+    84%{
+        left: 0;
     }
     100%{
-        left: -400%;
+        left: 0;
     }
+
+
 }
 
 /* Booking-form */

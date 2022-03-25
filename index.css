@@ -154,6 +154,7 @@ footer{
 .row{
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: space-around;
 }
 .footer{
 	background-color: #24262b;
