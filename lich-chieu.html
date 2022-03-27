@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="UTF-8">
         <title>Rạp phim QNU</title>
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="home.css">
-        <link rel="shortcut icon" href="./logo.png"/>
+        <link rel="stylesheet" href="lich-chieu.css">
+        <link rel="shortcut icon" href="logo.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-       
-    </head>
-    <body>
-        <div class="container">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
         <div style="display:none" class="main-reloader">
             <div class="loader"></div>
         </div>
+
 <header>
     <div class="header-area">
             <!-- Header Top Area Start -->
@@ -25,16 +26,16 @@
                         <div class="col-lg-5 col-md-3 col-sm-12">
                             <div class="header-top-social">
                                 <ul>
-                                    <li><a href="#"><img src="/icon social media/facebook.png" width="20" height="20"/></a></li>
-                                    <li><a href="#"><img src="/icon social media/youtube.png" width="20" height="20"/></a></li>
-                                    <li><a href="#"><img src="/icon social media/instagram.png" width="20" height="20"/></a></li>
+                                    <li><a href="#"><img src="icon social media/facebook.png" width="20" height="20"/></a></li>
+                                    <li><a href="#"><img src="icon social media/youtube.png" width="20" height="20"/></a></li>
+                                    <li><a href="#"><img src="icon social media/instagram.png" width="20" height="20"/></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-7-col-md-9-col-sm-12">
                             <div class="header-top-menu">
                                 <ul>
-                                    <li><a href="#" class="btn-member">Đăng nhập</a></li>
+                                    <li><a href="login.html" class="btn-member">Đăng nhập</a></li>
                                     <li><a href="#" class="btn-member">Đăng ký</a></li>
                                 </ul>
                             </div>
@@ -42,39 +43,170 @@
                     </div>
                 </div>
             </div>     
+    </div>
     <!-- Main Header Area Start -->
     <div class="menu-bar">
-        <p class="logo"><image src="/logo.png" width="120" height="120"></image></p>
+        <p class="logo"><image src="logo.png" width="120" height="120"></image></p>
         <ul>
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
             <li>
                 <a href="#">Phim</a>
                 <div class="dropdown-menu">
                     <ul>
-                        <li><a href="#">Đang chiếu</a></li>
+                        <li><a href="movie.html">Đang chiếu</a></li>
                         <li><a href="#">Sắp chiếu</a></li>
                     </ul>
                 </div>
             </li>
             <li><a href="#">Lịch chiếu</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
             
         </ul>
     </div>
     <!-- Main Header Area End -->
 </header>
-<!-- Body -->
-   <!-- Lịch chiếu -->
-<body>
-   <section>
-       <div class="lichchieu">
-           <div class="">
 
-           </div>
 
-       </div>
-   </section> 
-</body>
-    
+<section>
+    <div class="tabs">
+        <ul class="schedule-list">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-0">
+                        <p>Chủ Nhật</p>
+                        <p>27/03/2022</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-1">
+                        <p>Thứ Hai</p>
+                        <p>28/03/2022</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-2">
+                        <p>Thứ Ba</p>
+                        <p>29/03/2022</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-3">
+                        <p>Thứ Tư</p>
+                        <p>30/03/2022</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-4">
+                        <p>Thứ Năm</p>
+                        <p>31/03/2022</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-5">
+                        <p>Thứ Sáu</p>
+                        <p>01/04/2022</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lich-chieu-6">
+                        <p>Thứ Bảy</p>
+                        <p>02/04/2022</p>
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+
+        <div class="tab-active" id="lich-chieu-0">
+            <div class="movie-list-box">
+                
+                <div class="movie">
+                        <div class="img-details">
+                            <a class="link-banner" href="#">
+                              <img src="doctor.jpg">
+                            <a>   
+                        </div>
+                        <div class="info-details">
+                            <a class="link-title" href="#"><h3>DOCTOR STRANGE 2</h3></a>
+                            <p class="c13">C13</p>
+                            <p class="details-genre">
+                                Hành động,kịch tính
+                                <span>2D</span>
+                            </p>  
+                            <ul>
+                                <li><b>Đạo diễn</b> : Sam Raimi</li>
+                                <li><b>Ngày chiếu</b> : 27/03/2022</li>
+                                <li><b>Diễn viên</b> : Patrick Stewart, Benedict Cumberbatch, Elizabeth Olsen,..</li>
+                                <li><b>Thời lượng</b> : 1 giờ 52 phút</li>
+                            </ul>
+                            <div class="movie-content">
+                                <div class="tab-body">
+                                    <b>Nội dung phim:</b>
+                                    <p>Một tác giả tiểu thuyết lãng mạn cùng người mẫu bìa sách của cô bị cuốn vào một 
+                                        âm mưu bắt cóc dẫn đến hành trình phiêu lưu bá đạo nơi rừng rậm.</p>
+                                </div>
+                            </div>
+                            <div class="time-list">
+                                <a href="#"><span class="time-item">14:50</span></a>
+                                <a href="#"><span class="time-item">17:00</span></a>
+                                <a href="#"><span class="time-item">19:20</span></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-hide" id="lich-chieu-1">
+            <div class="movie-list-box">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-hide" id="lich-chieu-2">
+            <div class="movie-list-box">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-hide" id="lich-chieu-3">
+            <div class="movie-list-box">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-hide" id="lich-chieu-4">
+            <div class="movie-list-box">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-hide" id="lich-chieu-5">
+            <div class="movie-list-box">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-hide" id="lich-chieu-6">
+            <div class="movie-list-box">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
 <footer style ="background-color: rgb(255, 145, 0)">
@@ -83,19 +215,29 @@
             <div class="footer-col">
                 <h4>Rạp phim QNU</h4>
                 <ul>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Dịch vụ của chúng tôi</a></li>
-                    <li><a href="#">Các điều khoản</a></li>
+                    <li><a href="#">> Giới thiệu</a></li>
+                    <li><a href="#">> Dịch vụ của chúng tôi</a></li>
+                    <li><a href="#">> Các điều khoản</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Chính sách</h4>
                 <ul>
-                    <li><a href="#">Điều khoản chung</a></li>
-                    <li><a href="#">Điều khoản giao dịch</a></li>
-                    <li><a href="#">Chính sách thanh toán</a></li>
-                    <li><a href="#">Chính sách bảo mật</a></li>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">> Điều khoản chung</a></li>
+                    <li><a href="#">> Điều khoản giao dịch</a></li>
+                    <li><a href="#">> Chính sách thanh toán</a></li>
+                    <li><a href="#">> Chính sách bảo mật</a></li>
+                    <li><a href="#">> Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Thành viên nhóm</h4>
+                <ul>
+                    <li><a href="#">> Trung Hàn</a></li>
+                    <li><a href="#">> Nguyễn Văn An</a></li>
+                    <li><a href="#">> Nguyễn Nhật Quang</a></li>
+                    <li><a href="#">> Nguyễn Quốc Cường</a></li>
+                    <li><a href="#">> Vy Thành Long</a></li>
                 </ul>
             </div>
         </div>
@@ -104,6 +246,6 @@
         <p><h3>Designed by <a href="https://www.facebook.com/trung.han.2506/"><i>Trung Hàn</i></a></h3></p>
     </div>
 </footer>
-</div>
-    </body>
+
+</body>
 </html>
