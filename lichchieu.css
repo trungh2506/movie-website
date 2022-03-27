@@ -1,0 +1,132 @@
+.container-schedule-intro{
+    background-color: #e6e7e9;
+}
+
+.intro{
+    height: 105px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-box{
+    width: 94%;
+    border: solid 3px #f37737;
+    text-align: center;
+}
+.intro-box p{
+    font-size: 15px;
+    margin-top:10px;
+}
+.times{
+    margin-bottom: 30px;
+}
+
+.times-items{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 55px;
+}
+.days, .day {
+    margin-right: 35px;
+}
+.days{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 5px solid #f37737;
+}
+
+ul .rating{
+    display: inline-block;
+}
+
+.single-movie{
+    display: flex;
+}
+
+.single-movie-left{
+    width: 450px;
+    height: 450px;
+    margin-left: 50px;
+}
+
+.single-movie-left img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.single-movie-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 50px;
+    text-align: left;
+}
+.rating{
+    border-radius: 3px;
+    line-height: 16px;
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #f37a3b, #f37a3b);
+    color: #fff;
+    text-align: center;
+    border: medium none;
+}
+.single-movie-right a{
+    color: #271b15;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5;
+    line-height: 24px;
+
+}
+.list-gender{
+    color: #888888;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+    
+}
+.movie-info{
+    display: inline;
+    font-size: 14;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+    margin: 0px 0px 0px 3px;
+    text-transform: capitalize;
+}
+.movie-info p{
+    color: #f37a3b;
+}
+
+.movie-info p span{
+    color: #111111;
+}
+
+.hours{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+}
+
+.hours-item{
+    border-radius: 2px;
+    background-color: #f37737;
+    padding: 5px 10px;
+}
+.hours-item, .hours-item{
+    margin-right: 10px;
+}
+.hours-item::before{
+    margin-right: 10px;
+    border-radius: 2px;
+    background-color: #f37737;
+    padding: 5px 10px;
+}
+
+
+
+
+
