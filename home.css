@@ -74,17 +74,19 @@
     background-size: cover;
     padding: 50px;
     border: 50px;
+    
 }
 .row-booking-form{
-    margin-left: 280px;
+    display: flex;
+    justify-content: space-evenly;
 }
-select{
-    height: 60px;
-    right: 100px;
-    justify-content: center;
-    border-radius: 10px;
-    font-size: 20px;
+.row-booking-form select, .row-booking-form input[type="date"]{
+    border-radius: 5px;
+    font-size: 19px;
     font-style: italic;
+    width: 200px;
+    height: 50px;
+    color: #972626;
 }
 option{
     size: 12px;
