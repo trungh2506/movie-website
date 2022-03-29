@@ -70,8 +70,7 @@
 /* Booking-form */
 .booking-form{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-image: url(./background/brick.jpg);
-    background-size: cover;
+    background-image: url(./background/367126.jpg) ;
     padding: 50px;
     border: 50px;
     
@@ -81,15 +80,15 @@
     justify-content: space-evenly;
 }
 .row-booking-form select, .row-booking-form input[type="date"]{
+    width: 268px;
+    padding: 5px;
+    font-size: 18px;
+    border: 0;
     border-radius: 5px;
-    font-size: 19px;
-    font-style: italic;
-    width: 200px;
     height: 50px;
-    color: #972626;
-}
-option{
-    size: 12px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right rgb(255, 255, 255);
+    -webkit-appearance: none;
+    background-position-x: 244px;
 }
 /* Top movie */
 section{
