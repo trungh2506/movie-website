@@ -36,13 +36,6 @@ html{
     color: #fff;
     font-size: 20px;
 }
-.header-top-social li a img {
-    transition: all 0.6s;
-}
-.header-top-social li a img:hover {
-    transform: scale(2);
-}
-
 /* button member */
 .header-top-menu{
     margin-left: 765px;

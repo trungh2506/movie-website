@@ -65,7 +65,7 @@
 }
 input{
     background-color: #ffffff;
-    border-radius: 4px;
+    border-radius: 10px;
     border-style: solid;
     border-width: 1px;
     color: #495057;
@@ -91,7 +91,7 @@ input[id="confirm-register"]{
     font-size: 14px;
 }
 input[id="gender"]{
-    width: 25px;
+    width: 20px;
     margin: 0;
     padding: 0;
 }
