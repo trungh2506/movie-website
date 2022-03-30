@@ -16,7 +16,7 @@
 
 .intro-box{
     width: 94%;
-    border: solid 3px #f37737;
+    border: solid 3px rgb(255, 145, 0);
     text-align: center;
 }
 
@@ -55,18 +55,15 @@
     content:"";
     height: 5px;
     width: 120%;
-    background-color: #f37737;
+    background-color: rgb(255, 145, 0);
     position: absolute;
     top: 110%;
     left: -5px;
     visibility:hidden;
 }
-.days:hover {
-    transition: all 0.5;
-}
 
 .days:hover {
-    border-bottom: 5px solid #f37737;
+    border-bottom: 5px solid rgb(255, 145, 0);
     transition: all ease-in-out 0.5;
 }
 
@@ -95,11 +92,15 @@ ul .rating{
     margin-right: 50px;
     text-align: left;
 }
+.single-movie-right h3 a:hover{
+    color: rgb(255, 145, 0);
+    transition: all 0.5s;
+}
 
 .rating{
     border-radius: 3px;
     padding: 5px 10px;
-    background-image: linear-gradient(to right, #f37a3b, #f37a3b);
+    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 145, 0));
     color: #fff;
     text-align: center;
     border: medium none;
@@ -132,7 +133,7 @@ ul .rating{
 }
 
 .movie-info p{
-    color: #f37a3b;
+    color: rgb(255, 145, 0);
 }
 
 .movie-info p span{
@@ -148,7 +149,7 @@ ul .rating{
 
 .hours-item{
     border-radius: 2px;
-    background-color: #f37737;
+    background-color: rgb(255, 145, 0);
     padding: 5px 10px;
 }
 
@@ -159,7 +160,7 @@ ul .rating{
 .hours-item::before{
     margin-right: 10px;
     border-radius: 2px;
-    background-color: #f37737;
+    background-color: rgb(255, 145, 0);
     padding: 5px 10px;
 }
 

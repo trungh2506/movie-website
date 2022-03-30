@@ -36,13 +36,6 @@ html{
     color: #fff;
     font-size: 20px;
 }
-.header-top-social li a img {
-    transition: all 0.6s;
-}
-.header-top-social li a img:hover {
-    transform: scale(2);
-}
-
 /* button member */
 .header-top-menu{
     margin-left: 765px;
@@ -84,7 +77,7 @@ html{
     display: flex;
 }
 .menu-bar ul li{
-    padding: 25px 10px;
+    padding: 28px 10px;
     position: relative;
     transition: all 0.2s;
 }
