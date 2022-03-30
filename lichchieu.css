@@ -1,6 +1,19 @@
+*{
+    font-size: 14px;
+}
+
+.header-top-menu{
+    font-weight: 500;
+}
+
+.fa-brands {
+    font-size: 20px;
+}
+
 .container-schedule-intro{
     background-color: #e6e7e9;
 }
+
 
 .intro{
     height: 105px;
@@ -14,10 +27,16 @@
     border: solid 3px #f37737;
     text-align: center;
 }
+
+.intro-box h1{
+    font-size: 20px;
+}
+
 .intro-box p{
     font-size: 15px;
     margin-top:10px;
 }
+
 .times{
     margin-bottom: 30px;
 }
@@ -25,18 +44,42 @@
 .times-items{
     display: flex;
     justify-content: flex-start;
-    margin: 5px 55px;
+    margin: 5px 60px;
 }
+
 .days, .day {
     margin-right: 35px;
 }
+
 .days{
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 14px;
-    border-bottom: 5px solid #f37737;
+    position: relative;
+    /* border-bottom: 5px solid #f37737; */
 }
+.days::after{
+    content:"";
+    height: 5px;
+    width: 120%;
+    background-color: #f37737;
+    position: absolute;
+    top: 110%;
+    left: -5px;
+    visibility:hidden;
+}
+.days:hover {
+    transition: all 0.5;
+    background-color: rgb(248, 248, 248);
+}
+
+.days:hover {
+    border-bottom: 5px solid #f37737;
+    transition: all ease-in-out 0.5;
+}
+
+
 
 ul .rating{
     display: inline-block;
@@ -44,6 +87,7 @@ ul .rating{
 
 .single-movie{
     display: flex;
+    margin-top: 20px;
 }
 
 .single-movie-left{
@@ -64,15 +108,16 @@ ul .rating{
     margin-right: 50px;
     text-align: left;
 }
+
 .rating{
     border-radius: 3px;
-    line-height: 16px;
     padding: 5px 10px;
     background-image: linear-gradient(to right, #f37a3b, #f37a3b);
     color: #fff;
     text-align: center;
     border: medium none;
 }
+
 .single-movie-right a{
     color: #271b15;
     font-size: 20px;
@@ -81,6 +126,7 @@ ul .rating{
     line-height: 24px;
 
 }
+
 .list-gender{
     color: #888888;
     font-size: 14px;
@@ -88,14 +134,16 @@ ul .rating{
     line-height: 22px;
     
 }
+
 .movie-info{
     display: inline;
-    font-size: 14;
+    font-size: 14px;
     letter-spacing: 1.5px;
     line-height: 22px;
     margin: 0px 0px 0px 3px;
     text-transform: capitalize;
 }
+
 .movie-info p{
     color: #f37a3b;
 }
@@ -116,9 +164,11 @@ ul .rating{
     background-color: #f37737;
     padding: 5px 10px;
 }
+
 .hours-item, .hours-item{
     margin-right: 10px;
 }
+
 .hours-item::before{
     margin-right: 10px;
     border-radius: 2px;
