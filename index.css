@@ -84,7 +84,7 @@ html{
     display: flex;
 }
 .menu-bar ul li{
-    padding: 25px 10px;
+    padding: 28px 10px;
     position: relative;
     transition: all 0.2s;
 }
