@@ -55,7 +55,7 @@
     position: relative;
     /* border-bottom: 5px solid #f37737; */
 }
-.days::after{
+.days-border{
     content:"";
     height: 5px;
     width: 120%;
@@ -63,12 +63,29 @@
     position: absolute;
     top: 110%;
     left: -5px;
-    visibility:hidden;
+    display: none;
 }
 
-.days:hover {
-    border-bottom: 5px solid rgb(255, 145, 0);
-    transition: all ease-in-out 0.5;
+.days:hover .days-border{
+    /* transform-origin: 0 left; */
+    display: block;
+    animation: Growth ease-in-out 0.3s;
+}
+
+@keyframes Growth{
+    from { 
+        opacity: 0;
+        transform: scale(0);
+        width: 0;
+    }to{
+        opacity: 1;
+        transform: scale(1);
+        width: 100%;
+    }
+}
+
+.days:hover{
+    background-color: #af9797;
 }
 
 ul .rating{
