@@ -1,3 +1,9 @@
+#khuyen-mai{
+  background-color: rgb(255, 145, 0);
+  border-bottom: 5px solid rgb(184, 104, 0);
+  border-radius: 10px;
+}
+
 .sale-list {
   display: flex;
   background-color: #22272b;
