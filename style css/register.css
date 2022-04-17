@@ -1,0 +1,100 @@
+.container-register{
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+    height: 558px;
+    background-color: #ff9100;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-bottom: 1px solid #000000;
+}
+.register-area{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+form{
+    display: flex;
+}
+/* left row */
+.row-register-left{
+    color: #fff;
+    flex-basis: 25%;
+    margin: 50px 0px 0px;
+    padding: 0px 15px;
+    text-align: center;
+}
+.logo-register {
+    display: inline;
+    margin: 40px 0px 14px;
+    width: 200px;
+    height: 200px;
+}
+.register-title{
+    padding: 34px;
+    text-align: center;
+    margin: -25px 0px 0px;
+    font-style: italic;
+}
+/* right row */
+.row-register-right{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    padding: 85px;
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 44px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.form-register{
+    padding: 0px 15px;
+    text-align: left;
+    flex-basis: 75%;
+    display: flex;
+
+}
+.register-heading{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #495057;
+    margin-bottom: 25px;
+}
+input{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    color: #495057;
+    line-height: 24px;
+    padding: 5px 10px;
+    width: 350px;
+    margin: 7px;
+}
+input[id="confirm-register"]{
+    align-items: flex-start;
+    border-radius: 24px;
+    text-align: center;
+    margin: 10px 0px 0px;
+    padding: 10px;
+    background-color: #ff9100;
+    font-weight: 600;
+    color: white;
+    width: 200px;
+    margin-left: 125px;
+    cursor: pointer;
+}
+.gender{
+    font-size: 14px;
+}
+input[id="gender"]{
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
