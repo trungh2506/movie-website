@@ -16,8 +16,23 @@
                         <div class="col-lg-7-col-md-9-col-sm-12">
                             <div class="header-top-menu">
                                 <ul>
-                                    <li><a href="index.php?page=login" class="btn-member" name="login"><i class="fa-solid fa-user"></i>  Đăng nhập</i></a></li>
-                                    <li><a href="index.php?page=register" class="btn-member" name="register"><i class="fa-solid fa-pen"></i>  Đăng ký</a></li>
+                                <?php
+                        if(isset($_SESSION['confirm-login'])){
+                        ?>
+                        <h1 role="presentation" style="color: white; font-size: 25px;"><a href="#">Chào <?php echo $_SESSION['confirm-login']?>!</a></h1>
+                        <li role="presentation" class="btn-member" name="logout"><a href=./modules/contents/logout.php><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng Xuất</a></li>
+                        <?php
+                        }
+                        else
+                        {
+                        ?>
+                        <li>
+                            <a href="index.php?page=login" class="btn-member" name="login"><i class="fa-solid fa-user"></i>  Đăng nhập</i></a></li>
+                        <li>
+                            <a href="index.php?page=register" class="btn-member" name="register"><i class="fa-solid fa-pen"></i>  Đăng ký</a></li>
+                        <?php
+                        }
+                        ?>   
                                 </ul>
                             </div>
                         </div>

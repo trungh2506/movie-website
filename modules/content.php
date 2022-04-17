@@ -6,10 +6,10 @@
 			$tam='';
 		}if($tam == 'register'){
 			include ('contents/register.php');
-		}if($tam == 'home'){
+		}elseif($tam == 'home'){
 			include ('contents/home.php');
 		}elseif($tam=='login'){
-			include('login.php');
+			include('contents/login.php');
 		}elseif($tam=='dangchieu'){
 			include('contents/dangchieu.php');
 		}elseif($tam=='sapchieu'){
@@ -18,7 +18,10 @@
 			include('contents/lichchieu.php');
 		}elseif($tam=='khuyenmai'){
 			include('contents/khuyenmai.php');
-		};
+		}
+		else{
+			include('contents/home.php');
+		}
 	?>
 </div>
 <div class="clear"></div>
