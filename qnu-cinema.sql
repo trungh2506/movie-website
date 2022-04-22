@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 17, 2022 lúc 02:05 PM
+-- Thời gian đã tạo: Th4 22, 2022 lúc 04:42 AM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 8.1.2
 
@@ -70,12 +70,22 @@ CREATE TABLE `nhan_vien` (
 CREATE TABLE `phim` (
   `id_phim` int(11) NOT NULL,
   `ten_phim` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
+  `the_loai` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `dao_dien` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `dien_vien` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `noi_dung` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `thoi_luong` int(11) NOT NULL,
+  `do_tuoi` varchar(255) NOT NULL,
+  `loai_phim` varchar(255) NOT NULL,
   `img` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `phim`
+--
+
+INSERT INTO `phim` (`id_phim`, `ten_phim`, `the_loai`, `dao_dien`, `dien_vien`, `noi_dung`, `thoi_luong`, `do_tuoi`, `loai_phim`, `img`) VALUES
+(1, 'Doctor Strange 2', 'Hành động', 'Sam Raimi', 'Patrick Stewart, Benedict Cumberbatch, Elizabeth Olsen,..', 'a', 240, '', '', 'doctor.jpg');
 
 -- --------------------------------------------------------
 
@@ -85,7 +95,8 @@ CREATE TABLE `phim` (
 
 CREATE TABLE `tk_khach` (
   `id_khach` int(11) NOT NULL,
-  `ten_khach` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
+  `ho_ten` varchar(255) NOT NULL,
+  `ten_tk` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `mat_khau` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `dia_chi` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `cmnd` int(15) NOT NULL,
@@ -94,6 +105,13 @@ CREATE TABLE `tk_khach` (
   `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `gioi_tinh` enum('nam','nữ') CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `tk_khach`
+--
+
+INSERT INTO `tk_khach` (`id_khach`, `ho_ten`, `ten_tk`, `mat_khau`, `dia_chi`, `cmnd`, `ngay_sinh`, `sdt`, `email`, `gioi_tinh`) VALUES
+(16, 'Hàn Quốc Trung', 'trunghan', '123', '123 HBT', 2147483647, '0000-00-00', 2147483647, 'trungqnkute1@yahoo.com', 'nam');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -155,13 +173,13 @@ ALTER TABLE `nhan_vien`
 -- AUTO_INCREMENT cho bảng `phim`
 --
 ALTER TABLE `phim`
-  MODIFY `id_phim` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_phim` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `tk_khach`
 --
 ALTER TABLE `tk_khach`
-  MODIFY `id_khach` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_khach` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

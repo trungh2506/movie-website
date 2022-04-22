@@ -12,8 +12,8 @@
     <div class="booking-form">
         <div class="row-booking-form">
             <select class="form-select">
-                <option selected>RẠP</option>
-                <option value="1">RẠP QNU</option>
+                <option selected>RẠP QNU</option>
+                <!-- <option value="1">RẠP QNU</option> -->
             </select>
             <select class="form-select">
                 <option selected>Phim</option>

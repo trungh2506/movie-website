@@ -6,8 +6,8 @@
                 <a href="#">Phim</a>
                 <div class="dropdown-menu">
                     <ul>
-                        <li id="dang-chieu"><a href="index.php?page=dangchieu">Đang chiếu</a></li>
-                        <li id="sap-chieu"><a href="index.php?page=sapchieu">Sắp chiếu</a></li>
+                        <li id="dang-chieu" name="dang-chieu"><a href="index.php?page=dangchieu">Đang chiếu</a></li>
+                        <li id="sap-chieu" name="sap-chieu"><a href="index.php?page=sapchieu">Sắp chiếu</a></li>
                     </ul>
                 </div>
             </li>
