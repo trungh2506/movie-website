@@ -5,16 +5,16 @@
 ?>
 <div class="movie-list-area">
         <div class="container-movie-list-area">
-            <div class="info-film">
-                <?php
+            <?php
                 while($row = $run->fetch_array()){
                 ?>
-                <a href="#"><img src="images/<?php echo $row['img']?>" alt=""></a>
+                <div class="info-film">
+                <a href="#"><img src="images/<?php echo $row['img']?>" alt="" style="width: 600px; height: 900px"></a>
                 <h4 class="title-film"><?php echo $row['ten_phim']?></h4>
                 <p class="category"><?php echo $row['the_loai']?></p>
-                <?php
-                }
-                ?>
             </div>
+            <?php
+                }
+            ?>
         </div>
 </div>

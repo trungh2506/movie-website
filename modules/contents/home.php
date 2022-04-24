@@ -1,4 +1,8 @@
 <link rel="stylesheet" href="././style css/home.css">
+<?php
+		    $sql="select * from phim order by id_phim desc";
+            $run=$conn->query($sql);
+?>
 <div id="slider">
         <figure>
             <img src="images/ktpm.png" alt="">
@@ -32,71 +36,31 @@
     <!-- Top movie -->
     <section id="top-movie">
         <div class="top-movie-title">
-            <h2>Phim Hot: <span style="color: rgb(255, 145, 0)">Tháng 3</span></h2>
+            <h2>Phim Hot: <span style="color: rgb(255, 145, 0)">Tháng 4</span></h2>
         </div>
-       
-        <div class="row-movie-tabs">
-            <div class="left-row">
-                <a href="#"></a>
-                <img src="images/doctor.jpg" alt="">
-            </div>
-            <div class="right-row">
-                <h3 class="no-underline">Doctor Strange 2</h3>
-                <span class="title">
-                    Hành động, Kịch tính
-                </span>
-                <div class="time-time-red">
-                    <p class="time">2D</p>
-                    <p class="time-red">C16</p>
+        <?php
+            while($row = $run->fetch_array()){
+        ?>
+            <div class="row-movie-tabs">
+                <div class="left-row">
+                    <a href="#"></a>
+                    <img src="images/<?php echo $row['img'] ?>" alt="">
                 </div>
-                <p class="desc"><b>Đạo diễn: </b>Sam Raimi</p>
-                <p class="desc"><b>Diễn viên: </b>Patrick Stewart, Benedict Cumberbatch, Elizabeth Olsen,..</p>
-                <p class="content"><b>Mô tả: </b>Sự kiện xảy ra sau các diễn biến của Người Nhện: Không còn nhà và mùa đầu tiên của Loki (cùng năm 2021), sau những bất ổn mà Strange gặp phải trong giấc mơ, 
-                    anh gặp một cô bé tên là Chavez - một cô gái đang chạy trốn khỏi con quái vật khắp Đa vũ trụ</p>
-                <a href="#"><p class="time-red"><i class="fa-solid fa-ticket"></i> Đặt vé</p></a>
-            </div>
-        </div>
-        <div class="row-movie-tabs">
-            <div class="left-row">
-                <a href="#"></a>
-                <img src="images/doctor.jpg" alt="">
-            </div>
-            <div class="right-row">
-                <h3 class="no-underline">Doctor Strange 2</h3>
-                <span class="title">
-                    Hành động, Kịch tính
-                </span>
-                <div class="time-time-red">
-                    <p class="time">2D</p>
-                    <p class="time-red">C16</p>
+                <div class="right-row">
+                    <h3 class="no-underline"><?php echo $row['ten_phim']?></h3>
+                    <span class="title"><?php echo $row['the_loai']?></span>
+                    <div class="time-time-red">
+                        <p class="time"><?php echo $row['loai_phim']?></p>
+                        <p class="time-red"><?php echo $row['do_tuoi']?></p>
+                    </div>
+                    <p class="desc"><b>Đạo diễn: </b><?php echo $row['dao_dien']?></p>
+                    <p class="desc"><b>Diễn viên: </b><?php echo $row['dien_vien']?></p>
+                    <p class="content"><b>Mô tả: </b><?php echo $row['noi_dung']?></p>
+                    <a href="#"><p class="time-red"><i class="fa-solid fa-ticket"></i> Đặt vé</p></a>
                 </div>
-                <p class="desc"><b>Đạo diễn: </b>Sam Raimi</p>
-                <p class="desc"><b>Diễn viên: </b>Patrick Stewart, Benedict Cumberbatch, Elizabeth Olsen,..</p>
-                <p class="content"><b>Mô tả: </b>Sự kiện xảy ra sau các diễn biến của Người Nhện: Không còn nhà và mùa đầu tiên của Loki (cùng năm 2021), sau những bất ổn mà Strange gặp phải trong giấc mơ, 
-                    anh gặp một cô bé tên là Chavez - một cô gái đang chạy trốn khỏi con quái vật khắp Đa vũ trụ</p>
-                <a href="#"><p class="time-red"><i class="fa-solid fa-ticket"></i> Đặt vé</p></a>
             </div>
-        </div>
-        <div class="row-movie-tabs">
-            <div class="left-row">
-                <a href="#"></a>
-                <img src="images/doctor.jpg" alt="">
-            </div>
-            <div class="right-row">
-                <h3 class="no-underline">Doctor Strange 2</h3>
-                <span class="title">
-                    Hành động, Kịch tính
-                </span>
-                <div class="time-time-red">
-                    <p class="time">2D</p>
-                    <p class="time-red">C16</p>
-                </div>
-                <p class="desc"><b>Đạo diễn: </b>Sam Raimi</p>
-                <p class="desc"><b>Diễn viên: </b>Patrick Stewart, Benedict Cumberbatch, Elizabeth Olsen,..</p>
-                <p class="content"><b>Mô tả: </b>Sự kiện xảy ra sau các diễn biến của Người Nhện: Không còn nhà và mùa đầu tiên của Loki (cùng năm 2021), sau những bất ổn mà Strange gặp phải trong giấc mơ, 
-                    anh gặp một cô bé tên là Chavez - một cô gái đang chạy trốn khỏi con quái vật khắp Đa vũ trụ</p>
-                <a href="#"><p class="time-red"><i class="fa-solid fa-ticket"></i> Đặt vé</p></a>
-            </div>
-        </div>
+        <?php 
+        } 
+        ?>
     </section>
     
