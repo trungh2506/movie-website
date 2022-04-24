@@ -1,20 +1,20 @@
 <link rel="stylesheet" href="././style css/dangchieu.css">
 <?php
-        if(isset($_POST['dang-chieu'])){
 		    $sql="select * from phim order by id_phim desc";
-            $query=$conn->query($sql);
-            $nums=$query->num_rows;
-        }
+            $run=$conn->query($sql);
 ?>
 <div class="movie-list-area">
         <div class="container-movie-list-area">
             <div class="info-film">
-                <a href="#">
-                <img src="images/doctor.jpg" alt=""></a>
-                <h4 class="title-film">Doctor Strange 2</h4>
-                <p class="category">Hành động</p>
+                <?php
+                while($row = $run->fetch_array()){
+                ?>
+                <a href="#"><img src="images/<?php echo $row['img']?>" alt=""></a>
+                <h4 class="title-film"><?php echo $row['ten_phim']?></h4>
+                <p class="category"><?php echo $row['the_loai']?></p>
+                <?php
+                }
+                ?>
             </div>
         </div>
 </div>
-        
-      
