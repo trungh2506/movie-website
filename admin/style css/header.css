@@ -1,0 +1,15 @@
+.btn-member{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(255, 145, 0);
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+}
+a{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(255, 145, 0);
+}
