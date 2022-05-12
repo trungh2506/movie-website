@@ -41,7 +41,7 @@
       ?>
     </td> -->
    	<td>
-   		<a href="modules/quanlyphim/xuly.php?id_phim=<?php echo $row['id_phim'] ?>">Xoá</a> | <a href="?action=quanlyphim&query=sua&id_phim=<?php echo $row['id_phim'] ?>">Sửa</a> 
+   		<a href="modules/quanlyphim/xuly.php?id_phim=<?php echo $row['id_phim'] ?>">Xoá</a> | <a href="?action=quanlyphim&query=sua&idphim=<?php echo $row['id_phim'] ?>">Sửa</a> 
    	</td>
    
   </tr>

@@ -22,11 +22,13 @@
 	<?php 
 	include("./config.php");	
         include("modules/header.php");
+        ?>
+        <p style="font-size: 20px; text-align: right; color: red;">Chào ADMIN: <?php echo $_SESSION['login']?></p>
+        <?php
         include("modules/menu.php");
         include("modules/content.php");
     ?>
-            <p style="font-size: 20px">Chào ADMIN: <?php echo $_SESSION['login']?></p>
-            
+        
     <?php
 	include(".././modules/footer.php");
 	?>

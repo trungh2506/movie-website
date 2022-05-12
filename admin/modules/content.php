@@ -12,9 +12,9 @@
 				if($tam=='quanlyphim' && $query=='them'){
 					include("modules/quanlyphim/them.php");
 					include("modules/quanlyphim/lietke.php");
+				}elseif ($tam=='quanlyphim' && $query=='sua') {
+				 	include("modules/quanlyphim/sua.php");
 				}
-				// }elseif ($tam=='quanlydanhmucsanpham' && $query=='sua') {
-				// 	include("modules/quanlydanhmucsp/sua.php");
 				// // quản lý sản phẩm
 				// }elseif ($tam=='quanlysp' && $query=='them') {
 				// 	include("modules/quanlysp/them.php");

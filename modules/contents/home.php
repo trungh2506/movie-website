@@ -36,7 +36,7 @@
     <!-- Top movie -->
     <section id="top-movie">
         <div class="top-movie-title">
-            <h2>Phim Hot: <span style="color: rgb(255, 145, 0)">Tháng 4</span></h2>
+            <h2>Phim Hot: <span style="color: rgb(255, 145, 0)">Tháng <?php echo date("m")?></span></h2>
         </div>
         <?php
             while($row = $run->fetch_array()){
@@ -44,7 +44,7 @@
             <div class="row-movie-tabs">
                 <div class="left-row">
                     <a href="#"></a>
-                    <img src="images/<?php echo $row['img'] ?>" alt="">
+                    <img src="admin/modules/quanlyphim/uploads/<?php echo $row['img'] ?>" alt="">
                 </div>
                 <div class="right-row">
                     <h3 class="no-underline"><?php echo $row['ten_phim']?></h3>
