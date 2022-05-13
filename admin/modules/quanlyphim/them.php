@@ -35,9 +35,14 @@
                         <td><input type="text" name="loaiphim"></td>
                     </tr>
                     <tr>
+                        <td>Trailer</td>
+                        <td><input type="text" name="trailer"></td>
+                    </tr>
+                    <tr>
                         <td>Hình ảnh</td>
                         <td><input type="file" name="hinhanh"></td>
                     </tr>
+                    
                     <tr>
                        <td colspan="2"><input style="height: 50px; width: 100px; padding: 5px;" type="submit" name="themphim" value="Thêm phim"></td>
                     </tr>

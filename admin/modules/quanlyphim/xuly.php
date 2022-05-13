@@ -8,6 +8,7 @@
 	$thoiluong = $_POST['thoiluong'];
 	$dotuoi = $_POST['dotuoi'];
 	$loaiphim = $_POST['loaiphim'];
+	$trailer = $_POST['trailer'];
 
 //xuly hinh anh
 	$hinhanh = $_FILES['hinhanh']['name'];
@@ -15,8 +16,8 @@
 	$hinhanh = time().'_'.$hinhanh;
 if(isset($_POST['themphim'])){
 	//thêm
-	$sql_them = "INSERT INTO phim(ten_phim,the_loai,dao_dien,dien_vien,noi_dung,thoi_luong,do_tuoi,loai_phim,img) 
-	VALUE('".$tenphim."','".$theloai."','".$daodien."','".$dienvien."','".$noidung."','".$thoiluong."','".$dotuoi."','".$loaiphim."','".$hinhanh."')";
+	$sql_them = "INSERT INTO phim(ten_phim,the_loai,dao_dien,dien_vien,noi_dung,thoi_luong,do_tuoi,loai_phim,img,trailer) 
+	VALUE('".$tenphim."','".$theloai."','".$daodien."','".$dienvien."','".$noidung."','".$thoiluong."','".$dotuoi."','".$loaiphim."','".$hinhanh."','".$trailer."')";
 	mysqli_query($conn,$sql_them);
 	move_uploaded_file($hinhanh_tmp,'uploads/'.$hinhanh);
 	header('Location: ../../index.php?action=quanlyphim&query=them');
@@ -25,7 +26,7 @@ if(isset($_POST['themphim'])){
 	if($hinhanh != ''){
 		move_uploaded_file($hinhanh_tmp,'uploads/'.$hinhanh);
 		
-		$sql_update = "UPDATE phim SET ten_phim='".$tenphim."',the_loai='".$theloai."',dao_dien='".$daodien."',dien_vien='".$dienvien."',noi_dung='".$noidung."',thoi_luong='".$thoiluong."',do_tuoi='".$dotuoi."',loai_phim='".$loaiphim."',img='".$hinhanh."' WHERE id_phim='$_GET[idphim]'";
+		$sql_update = "UPDATE phim SET ten_phim='".$tenphim."',the_loai='".$theloai."',dao_dien='".$daodien."',dien_vien='".$dienvien."',noi_dung='".$noidung."',thoi_luong='".$thoiluong."',do_tuoi='".$dotuoi."',loai_phim='".$loaiphim."',img='".$hinhanh."',trailer='".$trailer."' WHERE id_phim='$_GET[idphim]'";
 		//xoa hinh anh cu
 		$sql = "SELECT * FROM phim WHERE id_phim = '$_GET[idphim]' LIMIT 1";
 		$query = mysqli_query($conn,$sql);
@@ -33,7 +34,7 @@ if(isset($_POST['themphim'])){
 			unlink('uploads/'.$row['img']);
 		}
 	}else{
-		$sql_update = "UPDATE phim SET ten_phim='".$tenphim."',the_loai='".$theloai."',dao_dien='".$daodien."',dien_vien='".$dienvien."',noi_dung='".$noidung."',thoi_luong='".$thoiluong."',do_tuoi='".$dotuoi."',loai_phim='".$loaiphim."',img='".$hinhanh."' WHERE id_phim='$_GET[idphim]'";
+		$sql_update = "UPDATE phim SET ten_phim='".$tenphim."',the_loai='".$theloai."',dao_dien='".$daodien."',dien_vien='".$dienvien."',noi_dung='".$noidung."',thoi_luong='".$thoiluong."',do_tuoi='".$dotuoi."',loai_phim='".$loaiphim."',img='".$hinhanh.",trailer='".$trailer."'' WHERE id_phim='$_GET[idphim]'";
 	}
 	mysqli_query($conn,$sql_update);
 		header('Location:../../index.php?action=quanlyphim&query=them');

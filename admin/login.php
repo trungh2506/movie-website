@@ -14,12 +14,10 @@
             echo "<script type='text/javascript'>alert('$message');</script>";
             $_SESSION['login'] = $username;
             header("Location: index.php");
-        }
-        else{
+        }else{
             echo '<script>alert("Tài khoản hoặc Mật khẩu không đúng,vui lòng nhập lại.");</script>';
-			header("Location:login.php");
+			header("Location: login.php");
         }
-
     }
 ?>
 <!DOCTYPE html>

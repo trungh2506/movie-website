@@ -40,6 +40,10 @@ while($row = mysqli_fetch_array($query_sua_phim)){
 	  	<td>Loại phim</td>
 	  	<td><input type="text" value="<?php echo $row['loai_phim'] ?>" name="loaiphim"></td>
 	  </tr>
+	  <tr>
+	  	<td>Trailer</td>
+	  	<td><input type="text" value="<?php echo $row['trailer'] ?>" name="trailer"></td>
+	  </tr>
 	   <tr>
 	  	<td>Hình ảnh</td>
 	  	<td>

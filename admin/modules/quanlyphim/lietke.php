@@ -14,6 +14,7 @@
     <th>Thời lượng</th>
     <th>Độ tuổi</th>
     <th>Loại phim</th>
+    <th>Trailer</th>
   	<th>Hình ảnh</th>
     <th>Trạng thái</th>
   </tr>
@@ -32,6 +33,7 @@
     <td><?php echo $row['thoi_luong'] ?></td>
     <td><?php echo $row['do_tuoi'] ?></td>
     <td><?php echo $row['loai_phim'] ?></td>
+    <td><?php echo $row['trailer'] ?></td>
     <td><img src="modules/quanlyphim/uploads/<?php echo $row['img'] ?>" width="150px"></td>
     <!-- <td><?php if($row['tinhtrang']==1){
         echo 'Kích hoạt';
@@ -41,7 +43,7 @@
       ?>
     </td> -->
    	<td>
-   		<a href="modules/quanlyphim/xuly.php?id_phim=<?php echo $row['id_phim'] ?>">Xoá</a> | <a href="?action=quanlyphim&query=sua&idphim=<?php echo $row['id_phim'] ?>">Sửa</a> 
+   		<a href="modules/quanlyphim/xuly.php?idphim=<?php echo $row['id_phim'] ?>">Xoá</a> | <a href="?action=quanlyphim&query=sua&idphim=<?php echo $row['id_phim'] ?>">Sửa</a> 
    	</td>
    
   </tr>
