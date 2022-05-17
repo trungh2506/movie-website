@@ -1,19 +1,7 @@
 <link rel="stylesheet" href="././style css/dangchieu.css">
 <?php
-		    $sql="select * from phim order by id_phim desc";
+		    $sql="SELECT * from phim order by id_phim desc";
             $run=$conn->query($sql);
-?>
-<?php
-    if(isset($_GET['query'])){
-        $query = $_GET['query'];
-    }
-    else{
-        $query = '';
-    }
-    if($query =='xem'){
-        include 'modules/contents/chitietphim.php';
-    }
-
 ?>
 <div class="movie-list-area">
         <div class="container-movie-list-area">
@@ -28,5 +16,6 @@
             <?php
                 }
             ?>
-        </div>
+    </div>
 </div>
+

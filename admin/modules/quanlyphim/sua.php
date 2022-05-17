@@ -22,11 +22,11 @@ while($row = mysqli_fetch_array($query_sua_phim)){
 	  </tr>
 	  <tr>
 	  	<td>Diễn viên</td>
-	  	<td><textarea  rows="10" type="text" style="resize: none" value="<?php echo $row['dien_vien'] ?>" name="dienvien"></textarea></td>
+	  	<td><textarea  rows="10" type="text" style="resize: none" name="dienvien"><?php echo $row['dien_vien'] ?></textarea></td>
 	  </tr>
       <tr>
 	  	<td>Nội dung</td>
-	  	<td><textarea  rows="10" type="text" style="resize: none" value="<?php echo $row['noi_dung'] ?>" name="noidung"></textarea></td>
+	  	<td><textarea  rows="10" type="text" style="resize: none" name="noidung"><?php echo $row['noi_dung'] ?></textarea></td>
 	  </tr>
       <tr>
 	  	<td>Thời lượng</td>
@@ -47,7 +47,7 @@ while($row = mysqli_fetch_array($query_sua_phim)){
 	   <tr>
 	  	<td>Hình ảnh</td>
 	  	<td>
-	  		<input type="file" name="hinhanh">
+	  		<input type="file" name="hinhanh" value="">
 	  		<img src="modules/quanlyphim/uploads/<?php echo $row['img'] ?>" width="150px">
 	  	</td>
 	  </tr>

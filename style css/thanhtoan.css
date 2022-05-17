@@ -1,0 +1,44 @@
+.container-bill{
+    display: flex;    
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    background-color: #22272B;
+}
+.top{
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+    background-color: #22272B;
+}
+.bottom{
+    background-color: #22272B;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    color: #fff;
+}
+.title-bill{
+    font-size: 40px;
+    color: rgb(245,125,0);
+}
+table{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    height: 200px;
+    width: 400px;
+}
+th{
+    border: 1px solid #fff;
+    text-align: center;
+}
+tr, td{
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 30px;
+}
+h5{
+    font-size: 30px;
+}

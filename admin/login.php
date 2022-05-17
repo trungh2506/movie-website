@@ -38,7 +38,7 @@
         <form action="" method="POST">
             <input type="text" placeholder="Username" name="username">
             <input type="password" placeholder="Password" name="password">
-            <input type="submit" name="login" value="Login">
+            <input type="submit" name="login" value="Login"><a href=""></a>
         </form>
     </div>
 </body>

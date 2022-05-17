@@ -1,6 +1,6 @@
 #lich-chieu{
     background-color: rgb(255, 145, 0);
-    border-bottom: 5px solid rgb(184, 104, 0);
+    border-bottom: 3px solid rgb(184, 104, 0);
     border-radius: 10px;
 }
 .header-top-menu{
@@ -90,10 +90,11 @@ ul .rating{
 .single-movie{
     display: flex;
     padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .single-movie-left{
-    width: 450px;
+    width: 320px;
     height: 450px;
     margin-left: 50px;
 }
@@ -141,12 +142,17 @@ ul .rating{
 }
 
 .movie-info{
-    display: inline;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: block;
     font-size: 14px;
     letter-spacing: 1.5px;
     line-height: 22px;
-    margin: 0px 0px 0px 3px;
     text-transform: capitalize;
+    width: 750px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .movie-info p{

@@ -19,7 +19,7 @@
                                 <?php
                         if(isset($_SESSION['confirm-login'])){
                         ?>
-                        <h1 role="presentation" style="color: white; font-size: 20px; padding: 5px;"><a href="#">Chào <?php echo $_SESSION['confirm-login']?>!</a></h1>
+                        <h1 role="presentation" style="color: white; font-size: 20px; padding: 5px;"><a href="#" style="color: white;">Chào <?php echo $_SESSION['confirm-login']?>!</a></h1>
                         <li role="presentation" class="btn-member" name="logout"><a href=./modules/contents/logout.php><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng Xuất</a></li>
                         <?php
                         }

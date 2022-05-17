@@ -15,6 +15,12 @@
 				}elseif ($tam=='quanlyphim' && $query=='sua') {
 				 	include("modules/quanlyphim/sua.php");
 				}
+				if($tam=='quanlythanhvien' && $query=='them'){
+					include("modules/quanlythanhvien/them.php");
+					include("modules/quanlythanhvien/lietke.php");
+				}elseif ($tam=='quanlythanhvien' && $query=='sua') {
+				 	include("modules/quanlythanhvien/sua.php");
+				}
 				// // quản lý sản phẩm
 				// }elseif ($tam=='quanlysp' && $query=='them') {
 				// 	include("modules/quanlysp/them.php");

@@ -14,6 +14,7 @@
             $_SESSION["confirm-login"]=$tentk;
             $_SESSION["username"] = $row['ten_tk'];
 			$_SESSION["hoten"] = $row['ho_ten'];
+            $_SESSION["idkhach"] = $row['id_khach'];
             header('Location: ./index.php');
 		}else{
 			// header('location:login.php');
