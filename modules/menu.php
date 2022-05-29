@@ -12,6 +12,7 @@
                 </div>
             </li>
             <li id="lich-chieu"><a href="index.php?page=lichchieu&ngaychieu=<?php echo date('Y-m-d')?>">Lịch chiếu</a></li>
-            <li id="khuyen-mai"><a href="index.php?page=khuyenmai">Khuyến mãi</a></li>    
+            <li id="khuyen-mai"><a href="index.php?page=khuyenmai">Khuyến mãi</a></li> 
+            <li id="lien-he"><a href="index.php?page=lienhe">Liên hệ</a></li>
         </ul>
     </div>

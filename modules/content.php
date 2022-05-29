@@ -40,6 +40,8 @@
 			include('contents/datfood.php');
 		}elseif($tam=='thanhtoan'){
 			include('contents/thanhtoan.php');
+		}elseif($tam=='lienhe'){
+			include('contents/lienhe.php');
 		}
 		else{
 			include('contents/home.php');

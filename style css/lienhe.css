@@ -1,0 +1,41 @@
+#lien-he{
+    background-color: rgb(255, 145, 0);
+    border-bottom: 3px solid rgb(184, 104, 0);
+    border-radius: 10px;
+}
+.container-contact{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    background-color: #fff;
+}
+.form-email{
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+.input-area{
+    height: 150px;
+}
+.title{
+    font-size: 50px;
+}
+span{
+    font-style: italic;
+    font-size: 20px;
+}
+.info-box{
+    font-size: 20px;
+    padding-right: 100px;
+    margin-right: 200px;
+}
+ul li{
+    padding-bottom: 5px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
