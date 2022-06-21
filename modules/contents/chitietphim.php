@@ -56,7 +56,7 @@
 }
 ?>
   <div class="movie-calendar" style="padding: 10px; background-color: #E6E7E9;">
-    <h2 style="text-align: center;text-transform: uppercase; text-decoration: underline; font-weight: 500; padding: 10px">LỊCH CHIẾU</h2>
+    <!-- <h2 style="text-align: center;text-transform: uppercase; text-decoration: underline; font-weight: 500; padding: 10px">LỊCH CHIẾU</h2> -->
     <h2 style="color:rgb(255, 145, 0); font-weight: 500; border: 2px solid rgb(255, 145, 0); padding: 10px;margin-top: 20px; margin-bottom: 20px">RẠP PHIM QNU 
         <br>
         <small style="color: black;">Trung tâm giải trí rạp phim đại học Quy Nhơn tầng 16 tòa nhà 15 tầng đại học Quy Nhơn, tỉnh Bình Định    </small>
@@ -78,4 +78,3 @@
         ?>
         </div>    
   </div>
-
